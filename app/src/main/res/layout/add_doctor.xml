@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_doctor"
+    tools:context=".AddDoctor">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:enabled="true"
+        android:enabled="false"
         android:layout_below="@id/contactPhone"
         android:id="@+id/email"
         android:layout_margin="5dp"/>
@@ -63,16 +66,17 @@
             android:text="Female"/>
     </RadioGroup>
 
-    <NumberPicker
+    <EditText
         android:id="@+id/num"
-        android:layout_width="48dp"
-        android:layout_height="26dp"
+        android:layout_width="56dp"
+        android:layout_height="59dp"
         android:layout_below="@id/grp"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="27dp"
         android:layout_toEndOf="@+id/age"
-        android:layout_toRightOf="@+id/age" />
+        android:layout_toRightOf="@+id/age"
+        android:inputType="number" />
 
     <TextView
 
@@ -81,10 +85,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/grp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="54dp"
         android:text="Age" />
 
-    <android.support.design.button.MaterialButton
+    <Button
         android:id="@+id/accept"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -93,7 +97,7 @@
         android:layout_marginBottom="10dp"
         android:text="Submit" />
 
-    <android.support.design.button.MaterialButton
+    <Button
         android:id="@+id/returna"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -101,6 +105,13 @@
         android:layout_marginTop="19dp"
         android:layout_marginBottom="10dp"
         android:text="Return" />
-
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/returna"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:id="@+id/bar1"
+        android:visibility="invisible"></com.google.android.material.progressindicator.LinearProgressIndicator>
 
 </RelativeLayout>
