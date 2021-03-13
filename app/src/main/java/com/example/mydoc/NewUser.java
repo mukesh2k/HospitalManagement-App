@@ -20,9 +20,9 @@ public class NewUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_inscription );
+        setContentView( R.layout.newusersigin);
 
-         eMail = (EditText) findViewById( R.id.email ) ;
+         eMail = (EditText) findViewById( R.id.email25) ;
          password = (EditText) findViewById( R.id.password ) ;
          inscription = (Button) findViewById( R.id.inscrir)  ;
 
