@@ -33,6 +33,7 @@
         android:hint="Phone Number"
         android:layout_below="@id/Specilation"
         android:id="@+id/contactPhone"
+        android:inputType="number"
         android:layout_margin="5dp"/>
     <EditText
         android:layout_width="match_parent"
