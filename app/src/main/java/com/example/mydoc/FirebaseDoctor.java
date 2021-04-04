@@ -1,4 +1,4 @@
-package com.example.mydoc;
+package com.example.ceghospital;
 
 import androidx.annotation.NonNull;
 
